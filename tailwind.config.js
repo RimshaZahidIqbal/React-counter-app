@@ -5,8 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'app-bg': "url('/imges/background.webp')",
+      },
+      boxShadow: {
+        'custom-orange': '0 0 20px #ff8c00'
+      }
+    },
   },
   plugins: [],
 }
-
