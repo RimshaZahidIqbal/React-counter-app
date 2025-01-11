@@ -3,9 +3,9 @@ import { useState } from 'react';
 function App() {
   const [count, setCount] = useState(0);
 
-  const handleIncrease = () => setCount(prevCount => prevCount + 1);
-  const handleDecrease = () => setCount(prevCount => prevCount - 1);
-  const handleReset = () => setCount(0);
+  const decreaseCount = () => setCount(prevCount => (prevCount > 0 ? prevCount - 1 : 0));
+  const increaseCount = () => setCount(prevCount => (prevCount <= 20 ? prevCount + 1 : 20));
+  const Reset = () => setCount(0);
 
   return (
     <>
@@ -22,19 +22,19 @@ function App() {
           <div className="flex gap-4">
             <button
               className="p-4 bg-[#2c3138] w-20 h-20 text-white rounded-xl hover:bg-[#575d64]"
-              onClick={handleDecrease}>
+              onClick={increaseCount}>
               <i className="fa-solid fa-minus text-xl font-black"></i>
             </button>
 
             <button
               className="p-4 bg-[#ff8c00] h-20 w-auto text-2xl text-white rounded-xl hover:bg-[#e07b00]"
-              onClick={handleReset}>
+              onClick={Reset}>
               Reset
             </button>
 
             <button
               className="p-4 bg-[#2c3138] w-20 h-20 text-white rounded-xl hover:bg-[#575d64]"
-              onClick={handleIncrease}>
+              onClick={decreaseCount}>
               <i className="fa-solid fa-plus text-xl font-black"></i>
             </button>
           </div>
