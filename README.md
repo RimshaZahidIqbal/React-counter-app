@@ -1,8 +1,34 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# **Use State Counter**
+   - **Task**: Create a simple counter that increments and decrements a number.
+   - **Steps**:
+     1. Initialize state with `useState(0)`.
+     2. Create two buttons: "Increment" and "Decrement".
+     3. Update the state when the buttons are clicked.
+## Setup Instructions
+1. Prerequisites
+- Node.js installed on your system.
+- A package manager like npm or yarn.
+2. Installation
+Clone this repository:
 
-Currently, two official plugins are available:
+``` 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+git clone  https://github.com/RimshaZahidIqbal/React-counter-app.git
+cd React-counter-app
+
+```
+Install dependencies:
+
+```
+npm install
+
+```
+Start the development server:
+```
+npm run dev
+
+```
+Open your browser and navigate to http://localhost:5173 to view the app.
+
